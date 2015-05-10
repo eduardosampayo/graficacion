@@ -21,18 +21,25 @@ public class AreaDeDibujo extends JPanel {
     public void paintComponent(Graphics g) {
         super.paintComponent(g);
         
-        //lineas en el eje de las x's
-        for (int x=10; x<=390; x=x+10) {
-            g.setColor(Color.BLUE);
-            g.drawLine(10, x, 490, x);
-        }
+//        //lineas en el eje de las x's
+//        for (int x=10; x<=390; x=x+10) {
+//            g.setColor(Color.BLUE);
+//            g.drawLine(10, x, 490, x);
+//        }
+//        
+//        //lineas en el eje de las y's        
+//        for (int y=10; y<=490; y=y+10) {
+//            g.setColor(Color.BLUE);
+//            g.drawLine(y, 10, y, 390); 
+//        }
         
-        //lineas en el eje de las y's        
+        
+        //lineas en el eje de las y's que van creciendo        
         for (int y=10; y<=490; y=y+10) {
             g.setColor(Color.BLUE);
-            g.drawLine(y, 10, y, 390); 
-        }         
-    }    
-         
+            g.drawLine(y, 10, y, y); 
+        }
+        
+    }       
 }
 
