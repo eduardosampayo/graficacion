@@ -9,12 +9,12 @@ import javax.swing.JPanel;
  *
  * @author Eduardo
  */
-public class AreaDeDibujo extends JPanel {
+public class TituloEduardo extends JPanel {
     
-    public AreaDeDibujo() {
-        setSize(500, 400);
-        setLocation(20, 20);
-        setBackground(Color.WHITE);
+    public TituloEduardo() {
+        setSize(1233, 660);
+        setLocation(0, 0);
+        setBackground(Color.DARK_GRAY);
     }
     
     @Override
@@ -35,10 +35,10 @@ public class AreaDeDibujo extends JPanel {
         
         
         //lineas en el eje de las y's que van creciendo        
-        for (int y=10; y<=490; y=y+10) {
-            g.setColor(Color.BLUE);
-            g.drawLine(y, 10, y, y); 
-        }
+//        for (int y=10; y<=490; y=y+10) {
+//            g.setColor(Color.BLUE);
+//            g.drawLine(y, 10, y, y); 
+//        }
         
     }       
 }
