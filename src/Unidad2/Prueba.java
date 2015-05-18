@@ -31,7 +31,7 @@ public class Prueba extends javax.swing.JFrame implements KeyListener
         getContentPane().setLayout(null);
 
 //        setBounds(0, 0, 616, 619);
-        setBounds(0, 0, 1250, 700); //tamaño del nuevo panel
+        setBounds(0, 0, 837, 700); //tamaño del nuevo panel
     }// </editor-fold>//GEN-END:initComponents
         public static void main(String args[]) {
             java.awt.EventQueue.invokeLater(new Runnable() {
