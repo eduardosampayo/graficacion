@@ -12,9 +12,9 @@ import javax.swing.JPanel;
 public class TituloEduardo extends JPanel {
     
     public TituloEduardo() {
-        setSize(820, 660);
-        setLocation(0, 0);
         setBackground(Color.DARK_GRAY);
+        setLocation(0, 0); //ubicacion del panel
+        setSize(820, 660); //tamaño del panel       
     }
     
     @Override
