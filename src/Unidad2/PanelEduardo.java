@@ -40,74 +40,66 @@ public class PanelEduardo extends JPanel {
             g2d.drawLine(i,0,i,610); //lineas verticales 
         }
         
-        
+//        g2d.setColor(new Color(180,255,180)); //establece colores rgb
+//        Color bColor = Color.decode("FF0096"); //establece color hexadecimal
+//        g2d.setColor(new Color(0xFABE8F)); // tambien establece color hexadecimal
         /*============================================================
             figuras geometricas rellenas
           ============================================================*/        
-        g2d.setColor(Color.yellow);
+        g2d.setColor(new Color(0xFDFD06));
         g2d.fillOval(76, 57, 76, 76); //sol      
                 
-        g2d.setColor(Color.BLACK);
-        g2d.drawLine(304, 356, 800, 356); //linea base de casa, pinos y cesped
-        
-        g2d.setColor(Color.gray);
+        g2d.setColor(new Color(0x964804));
         g2d.fillRect(342, 294, 19, 62); //base de pino izquierdo
-        g2d.fillRect(437, 294, 19, 62); //base de pino derecho
+        g2d.fillRect(418, 294, 19, 62); //base de pino derecho
                 
-        g2d.setColor(Color.GREEN);
+        g2d.setColor(new Color(0x8EC752));
         int px1[]={323,380,352};
         int py1[]={294,294,143};
         g2d.fillPolygon(px1, py1, 3); //pino izquierdo
-        
-        int px2[]={418,475,447};
+        g2d.setColor(new Color(0x09A250));        
+        int px2[]={399,456,428};
         int py2[]={294,294,143};
         g2d.fillPolygon(px2, py2, 3); //pino derecho        
         
-        g2d.setColor(Color.yellow);
-        g2d.fillRect(551, 228, 228, 128); //paredes de casa        
-        g2d.setColor(Color.black);
-        g2d.drawLine(627, 228, 627, 356); //pared que divide la casa        
-        g2d.setColor(Color.gray);
+        g2d.setColor(new Color(0xFABE8F));
+        g2d.fillRect(551, 228, 228, 128); //paredes de casa                      
+        g2d.setColor(new Color(0xD26815));
         g2d.fillRect(573, 285, 33, 71); //puerta        
         g2d.setColor(Color.white);
-        g2d.fillRect(655, 256, 95, 48); //ventana  
-        g2d.setColor(Color.black);
-        g2d.drawLine(655, 280, 750, 280); //linea vertical de ventana
-        g2d.drawLine(702, 256, 702, 304); //linea horizontal de ventana        
+        g2d.fillRect(655, 256, 95, 48); //ventana               
         int ptx[]={551,779,665};
         int pty[]={228,228,143};
-        g2d.setColor(Color.orange);
+        g2d.setColor(new Color(0xD26815));
         g2d.fillPolygon(ptx, pty, 3); //techo de casa
                 
-        g2d.setColor(Color.pink);
+        g2d.setColor(new Color(0xFABE8F));
         g2d.fillOval(57, 356, 47, 47); //cabeza del papa
         g2d.setColor(Color.white);
         g2d.fillOval(68, 370, 8, 8); //ojo izquierdo
-        g2d.fillOval(86, 370, 8, 8); //ojo derecho
-        g2d.setColor(Color.black);
-        g2d.drawArc(67, 380, 27, 10, 180, 180); //boca
-        g2d.setColor(Color.blue);
+        g2d.fillOval(86, 370, 8, 8); //ojo derecho      
+        g2d.setColor(new Color(0x2A4D73));
         g2d.fillRect(57, 409, 47, 78); //torso del papa
+        g2d.setColor(new Color(0x375E8C));
         g2d.fillRect(10, 409, 47, 16); //brazo izquierdo papa
         g2d.fillRect(104, 409, 47, 16); //brazo derecho papa
+        g2d.setColor(new Color(0xB6B652));
         g2d.fillRect(57, 487, 23, 70); //pierna izquierda papa
         g2d.fillRect(81, 487, 23, 70); //pierna derecha papa
         g2d.setColor(Color.black);
         g2d.fillOval(57, 557, 25, 22); //pie izquierdo papa
         g2d.fillOval(81, 557, 25, 22); //pie derecho papa
                 
-        g2d.setColor(Color.pink);
+        g2d.setColor(new Color(0xFABE8F));
         g2d.fillOval(195, 383, 47, 43); //cabeza de la mama
         g2d.setColor(Color.white);
         g2d.fillOval(205, 396, 8, 8); //ojo izquierdo
-        g2d.fillOval(223, 396, 8, 8); //ojo derecho
-        g2d.setColor(Color.black);
-        g2d.drawArc(205, 405, 27, 12, 180, 180); //boca
-        g2d.setColor(Color.magenta);
+        g2d.fillOval(223, 396, 8, 8); //ojo derecho      
+        g2d.setColor(new Color(0x62308A));
         int pxm[]={218,265,171};
         int pym[]={426,532,532};
         g2d.fillPolygon(pxm, pym, 3); //torso mama
-        g2d.setColor(Color.pink);
+        g2d.setColor(new Color(0xFABE8F));
         g2d.fillRect(168, 437, 38, 16); //brazo izquierdo mama
         g2d.fillRect(229, 437, 38, 16); //brazo derecho mama
         g2d.fillRect(198, 533, 16, 25); //pierna izquierda mama
@@ -116,41 +108,69 @@ public class PanelEduardo extends JPanel {
         g2d.fillOval(188, 557, 25, 22); //pie izquierdo mama
         g2d.fillOval(218, 557, 25, 22); //pie derecho mama
         
-//        g2d.setColor(new Color(180,255,180)); //establece colores rgb
-//        Color bColor = Color.decode("FF0096"); //establece color hexadecimal
-        g2d.setColor(new Color(0xFDFD06)); // otra manera de establecer color hexadecimal
+        g2d.setColor(new Color(0xFABE8F)); // color hexadecimal
         g2d.fillOval(315, 435, 38, 35); //cabeza de la niña
-        g2d.setColor(Color.red);
+        g2d.setColor(Color.white);
+        g2d.fillOval(325, 444, 6, 6); //ojo izquierdo niña
+        g2d.fillOval(337, 444, 6, 6); //ojo derecho niña      
+        g2d.setColor(new Color(0xEF0506));
         int pcx [] ={334,362,306};
         int pcy [] ={470,524,524};
         g2d.fillPolygon(pcx, pcy, 3); //torso niña
-        g2d.setColor(Color.pink);
-        g2d.setColor(Color.pink);
+        g2d.setColor(new Color(0xFABE8F));
         g2d.fillRect(291, 477, 32, 12); //brazo izquierdo niña
         g2d.fillRect(345, 477, 32, 12); //brazo derecho niña
-        int ppx [] ={306,362,334};
+        int ppx [] ={308,359,334};
         int ppy [] ={524,524,566};
         g2d.fillPolygon(ppx, ppy, 3); //piernas niña
+        g2d.setColor(Color.black);
+        g2d.fillOval(316, 562, 18, 12); //pie izquierdo mama
+        g2d.fillOval(335, 562, 18, 12); //pie derecho mama
         
-
+        g2d.setColor(new Color(0x98A496));
+        int pfx [] ={440,455,423};
+        int pfy [] ={508,545,545};
+        g2d.fillPolygon(pfx, pfy, 3); //cabeza firulais
+        g2d.setColor(Color.white);
+        g2d.fillOval(430, 520, 7, 7); //ojo izquierdo firulais
+        g2d.fillOval(437, 520, 7, 7); //ojo derecho firulais
+        g2d.setColor(new Color(0x98A496));
+        int pfoix [] ={427,437,417};
+        int pfoiy [] ={509,517,517};
+        g2d.fillPolygon(pfoix, pfoiy, 3); //oreja izquierda firulais
+        int pfodx [] ={456,466,446};
+        int pfody [] ={517,525,525};
+        g2d.fillPolygon(pfodx, pfody, 3); //oreja derecha firulais
+        g2d.fillRect(455, 545, 57, 29); //cuerpo firulais
+        g2d.fillRect(455, 574, 8, 15); //pata izquierda firulais
+        g2d.fillRect(504, 574, 8, 15); //pata derecha firulais
+        int pfcx [] ={512,524,536};
+        int pfcy [] ={560,545,560};
+        g2d.fillPolygon(pfcx, pfcy, 3); //cola firulais
+        
         
         
         /*============================================================
             perimetros de todas las figuras realizadas
           ============================================================*/
         g2d.setColor(Color.black);
-        g2d.drawOval(76, 57, 76, 76); //sol        
+        g2d.drawOval(76, 57, 76, 76); //sol    
+        g2d.drawLine(304, 356, 800, 356); //linea base de casa, pinos y cesped
         g2d.drawRect(342, 294, 19, 62); //base pino izquierdo
-        g2d.drawRect(437, 294, 19, 62); //base pino derecho
+        g2d.drawRect(418, 294, 19, 62); //base pino derecho
         g2d.drawPolygon(px1, py1, 3); //pino izquierdo
         g2d.drawPolygon(px2, py2, 3); //pino derecho
         g2d.drawRect(551, 228, 228, 128); //casa
+        g2d.drawLine(627, 228, 627, 356); //pared que divide la casa
         g2d.drawRect(573, 285, 33, 71); //puerta
         g2d.drawRect(655, 256, 95, 48); //ventana
+        g2d.drawLine(655, 280, 750, 280); //linea vertical de ventana
+        g2d.drawLine(702, 256, 702, 304); //linea horizontal de ventana 
         g2d.drawPolygon(ptx, pty, 3); //techo de casa        
         g2d.drawOval(57, 356, 47, 47); //cabeza papa
         g2d.drawOval(68, 370, 8, 8); //ojo izquierdo del papa
         g2d.drawOval(86, 370, 8, 8); //ojo derecho del papa
+        g2d.drawArc(67, 380, 27, 10, 180, 180); //boca
         g2d.drawRect(57, 409, 47, 78); //torso papa
         g2d.drawRect(10, 409, 47, 16); //brazo izquierdo papa
         g2d.drawRect(104, 409, 47, 16); //brazo derecho papa
@@ -161,17 +181,30 @@ public class PanelEduardo extends JPanel {
         g2d.drawOval(195, 383, 47, 43); //cabeza de la mama
         g2d.drawOval(205, 396, 8, 8); //ojo izquierdo de la mama
         g2d.drawOval(223, 396, 8, 8); //ojo derecho de la mama
+        g2d.drawArc(205, 405, 27, 12, 180, 180); //boca
         g2d.drawPolygon(pxm, pym, 3); //torso mama
         g2d.drawRect(168, 437, 38, 16); //brazo izquierdo mama
         g2d.drawRect(229, 437, 38, 16); //brazo derecho mama
         g2d.drawRect(198, 533, 16, 25); //pierna izquierda mama 
         g2d.drawRect(225, 533, 11, 25); //pierna derecha mama
         g2d.drawOval(315, 435, 38, 35); //cabeza de la niña
+        g2d.drawOval(325, 444, 6, 6); //ojo izquierdo niña
+        g2d.drawOval(337, 444, 6, 6); //ojo derecho niña
+        g2d.drawArc(325, 451, 19, 10, 180, 180); //boca niña
         g2d.drawPolygon(pcx, pcy, 3); //torso niña
         g2d.drawRect(291, 477, 32, 12); //brazo izquierdo niña
         g2d.drawRect(345, 477, 32, 12); //brazo derecho niña
         g2d.drawPolygon(ppx, ppy, 3); //piernas niña
         g2d.drawLine(334, 524, 334, 566); //linea que divide las piernas
-         
+        g2d.drawPolygon(pfx, pfy, 3); //cabeza firulais
+        g2d.drawOval(430, 520, 7, 7); //ojo izquierdo firulais
+        g2d.drawOval(437, 520, 7, 7); //ojo derecho firulais
+        g2d.drawPolygon(pfoix, pfoiy, 3); //oreja izquierda firulais
+        g2d.drawPolygon(pfodx, pfody, 3); //oreja derecha firulais
+        g2d.drawRect(455, 545, 57, 29); //cuerpo firulais  
+        g2d.drawRect(455, 574, 8, 15); //pata izquierda firulais
+        g2d.drawRect(504, 574, 8, 15); //pata derecha firulais
+        g2d.drawPolygon(pfcx, pfcy, 3); //cola firulais
+        
     }
 }
