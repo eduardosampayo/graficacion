@@ -73,8 +73,8 @@ public class Cuadricula extends JPanel{
 //        g2d.setColor(Color.BLACK);
 //        g2d.fillArc(50, 300, 150, 150, 180, 180);
         
-        int puntosX[] = {250,450,50};
-        int puntosY[] = {50,450,450};
-        g2d.fillPolygon(puntosX, puntosY, 3);
+//        int puntosX[] = {250,450,50};
+//        int puntosY[] = {50,450,450};
+//        g2d.fillPolygon(puntosX, puntosY, 3);
     }    
 }

@@ -10,17 +10,19 @@ public class Prueba extends javax.swing.JFrame implements KeyListener
         initComponents();
 //        Cuadricula panel = new Cuadricula();
 //        add(panel);
-//        NumerosPlano panelNumeros = new NumerosPlano(); 
-//        add(panelNumeros);
-        PanelEduardo paneleduardo = new PanelEduardo();
-        add(paneleduardo);
-        TituloEduardo titulo = new TituloEduardo();
-        add(titulo);
+        Transformaciones trans = new Transformaciones();
+        add(trans);
+        NumerosPlano panelNumeros = new NumerosPlano(); 
+        add(panelNumeros);
+//        PanelEduardo paneleduardo = new PanelEduardo();
+//        add(paneleduardo);
+//        TituloEduardo titulo = new TituloEduardo();
+//        add(titulo);        
                         
         setLocationRelativeTo(null); 
         //addKeyListener(this);
 //        panel.requestFocus();
-        paneleduardo.requestFocus();
+        trans.requestFocus();
     }    
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
@@ -30,8 +32,8 @@ public class Prueba extends javax.swing.JFrame implements KeyListener
         setTitle("Graficación");
         getContentPane().setLayout(null);
 
-//        setBounds(0, 0, 616, 619);
-        setBounds(0, 0, 837, 700); //tamaño del nuevo panel
+        setBounds(0, 0, 616, 619); //tamaño del panel cuadricula
+//        setBounds(0, 0, 837, 700); //tamaño del nuevo panelEduardo
     }// </editor-fold>//GEN-END:initComponents
         public static void main(String args[]) {
             java.awt.EventQueue.invokeLater(new Runnable() {

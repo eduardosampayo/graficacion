@@ -73,7 +73,7 @@ public class PanelEduardo extends JPanel {
         g2d.setColor(new Color(0xD26815));
         g2d.fillPolygon(ptx, pty, 3); //techo de casa
                 
-        g2d.setColor(new Color(0xFCFEFD));
+        g2d.setColor(new Color(0xFABE8F));
         g2d.fillOval(57, 356, 47, 47); //cabeza del papa
         g2d.setColor(Color.white);
         g2d.fillOval(68, 370, 8, 8); //ojo izquierdo
@@ -186,18 +186,34 @@ public class PanelEduardo extends JPanel {
         g2d.setColor(new Color(0xFDFD06));
         g2d.fillOval(686, 439, 27, 24); //flore derecha
         g2d.setColor(Color.black);
-        g2d.drawOval(686, 439, 27, 24); //flore derecha
+        g2d.drawOval(686, 439, 27, 24); //flore derecha   
+        
+        g2d.setColor(Color.black);
+        g2d.drawLine(640, 496, 662, 560); //tallo izquierdo
+        g2d.drawLine(690, 496, 670, 560); //tallo derecho
         
         g2d.setColor(new Color(0x8EC752));
         int ppfx [] ={656,666,676};
         int ppfy [] ={580,550,580};
-        g2d.fillPolygon(ppfx, ppfy, 3); //cesped de
+        g2d.fillPolygon(ppfx, ppfy, 3); //cesped de flor
         
-        g2d.setColor(Color.black);
-        g2d.drawLine(640, 496, 662, 560);
-        g2d.drawLine(690, 496, 670, 560);
+        g2d.setColor(new Color(0x809F73));
+        int ppix [] ={640,651,662};
+        int ppiy [] ={564,531,564};
+        g2d.fillPolygon(ppix, ppiy, 3); //cesped de izquirdo      
+               
+        g2d.setColor(new Color(0x09A250));
+        int ppdx [] ={671,682,693};
+        int ppdy [] ={564,531,564};
+        g2d.fillPolygon(ppdx, ppdy, 3); //cesped derecho
+        
+        g2d.setColor(new Color(0x6A8B4A));
+        int ppsx [] ={616,626,636};
+        int ppsy [] ={580,550,580};
+        g2d.fillPolygon(ppsx, ppsy, 3); //cesped solo       
         
         
+         
         /*============================================================
             perimetros de todas las figuras realizadas
           ============================================================*/
@@ -255,7 +271,10 @@ public class PanelEduardo extends JPanel {
         g2d.drawOval(583, 449, 27, 24); //flore izquierda
         g2d.drawOval(591, 472, 27, 24); //flore izquierda
         g2d.drawOval(660, 449, 27, 24); //flore derecha
-        g2d.drawOval(668, 472, 27, 24); //flore derecha        
-        
+        g2d.drawOval(668, 472, 27, 24); //flore derecha 
+        g2d.drawPolygon(ppfx, ppfy, 3); //cesped de flor
+        g2d.drawPolygon(ppix, ppiy, 3); //cesped de izquirdo
+        g2d.drawPolygon(ppdx, ppdy, 3); //cesped derecho
+        g2d.drawPolygon(ppsx, ppsy, 3); //cesped solo
     }
 }
