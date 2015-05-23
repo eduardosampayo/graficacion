@@ -13,7 +13,7 @@ import javax.swing.JPanel;
 public class PanelEduardo extends JPanel {
     
     public PanelEduardo() {
-        setBackground(Color.WHITE); //color del panel
+//        setBackground(Color.WHITE); //color del panel
         setLocation(10, 40); //posicion del panel
         setSize(800, 610); //tamaño del panel
         setLayout(null);
@@ -73,7 +73,7 @@ public class PanelEduardo extends JPanel {
         g2d.setColor(new Color(0xD26815));
         g2d.fillPolygon(ptx, pty, 3); //techo de casa
                 
-        g2d.setColor(new Color(0xFABE8F));
+        g2d.setColor(new Color(0xFCFEFD));
         g2d.fillOval(57, 356, 47, 47); //cabeza del papa
         g2d.setColor(Color.white);
         g2d.fillOval(68, 370, 8, 8); //ojo izquierdo
@@ -131,6 +131,8 @@ public class PanelEduardo extends JPanel {
         int pfx [] ={440,455,423};
         int pfy [] ={508,545,545};
         g2d.fillPolygon(pfx, pfy, 3); //cabeza firulais
+        g2d.setColor(Color.black);
+        g2d.drawPolygon(pfx, pfy, 3); //cabeza firulais
         g2d.setColor(Color.white);
         g2d.fillOval(430, 520, 7, 7); //ojo izquierdo firulais
         g2d.fillOval(437, 520, 7, 7); //ojo derecho firulais
@@ -148,6 +150,52 @@ public class PanelEduardo extends JPanel {
         int pfcy [] ={560,545,560};
         g2d.fillPolygon(pfcx, pfcy, 3); //cola firulais
         
+        g2d.setColor(new Color(0xFDFD06));
+        g2d.fillOval(608, 465, 17, 12); //centro de flor
+        g2d.setColor(Color.black);
+        g2d.drawOval(608, 465, 17, 12); //centro de flor        
+        g2d.setColor(new Color(0xFABE8F));
+        g2d.fillOval(583, 449, 27, 24); //flore izquierda
+        g2d.fillOval(591, 472, 27, 24); //flore izquierda
+        g2d.fillOval(618, 472, 27, 24); //flore izquierda        
+        g2d.setColor(Color.black);
+        g2d.drawOval(618, 472, 27, 24); //flore izquierda
+        g2d.setColor(new Color(0xFABE8F));
+        g2d.fillOval(623, 454, 27, 24); //flore izquierda
+        g2d.setColor(Color.black);
+        g2d.drawOval(623, 454, 27, 24); //flore izquierda
+        g2d.setColor(new Color(0xFABE8F));
+        g2d.fillOval(609, 439, 27, 24); //flore izquierda        
+        g2d.setColor(Color.black);
+        g2d.drawOval(609, 439, 27, 24); //flore izquierda
+        
+        g2d.setColor(new Color(0xFABE8F));
+        g2d.fillOval(685, 465, 17, 12); //centro de flor
+        g2d.setColor(Color.black);
+        g2d.drawOval(685, 465, 17, 12); //centro de flor        
+        g2d.setColor(new Color(0xFDFD06));
+        g2d.fillOval(660, 449, 27, 24); //flore derecha
+        g2d.fillOval(668, 472, 27, 24); //flore derecha
+        g2d.fillOval(695, 472, 27, 24); //flore derecha
+        g2d.setColor(Color.black);
+        g2d.drawOval(695, 472, 27, 24); //flore derecha
+        g2d.setColor(new Color(0xFDFD06));
+        g2d.fillOval(700, 454, 27, 24); //flore derecha
+        g2d.setColor(Color.black);
+        g2d.drawOval(700, 454, 27, 24); //flore derecha
+        g2d.setColor(new Color(0xFDFD06));
+        g2d.fillOval(686, 439, 27, 24); //flore derecha
+        g2d.setColor(Color.black);
+        g2d.drawOval(686, 439, 27, 24); //flore derecha
+        
+        g2d.setColor(new Color(0x8EC752));
+        int ppfx [] ={656,666,676};
+        int ppfy [] ={580,550,580};
+        g2d.fillPolygon(ppfx, ppfy, 3); //cesped de
+        
+        g2d.setColor(Color.black);
+        g2d.drawLine(640, 496, 662, 560);
+        g2d.drawLine(690, 496, 670, 560);
         
         
         /*============================================================
@@ -195,8 +243,7 @@ public class PanelEduardo extends JPanel {
         g2d.drawRect(291, 477, 32, 12); //brazo izquierdo niña
         g2d.drawRect(345, 477, 32, 12); //brazo derecho niña
         g2d.drawPolygon(ppx, ppy, 3); //piernas niña
-        g2d.drawLine(334, 524, 334, 566); //linea que divide las piernas
-        g2d.drawPolygon(pfx, pfy, 3); //cabeza firulais
+        g2d.drawLine(334, 524, 334, 566); //linea que divide las piernas        
         g2d.drawOval(430, 520, 7, 7); //ojo izquierdo firulais
         g2d.drawOval(437, 520, 7, 7); //ojo derecho firulais
         g2d.drawPolygon(pfoix, pfoiy, 3); //oreja izquierda firulais
@@ -205,6 +252,10 @@ public class PanelEduardo extends JPanel {
         g2d.drawRect(455, 574, 8, 15); //pata izquierda firulais
         g2d.drawRect(504, 574, 8, 15); //pata derecha firulais
         g2d.drawPolygon(pfcx, pfcy, 3); //cola firulais
+        g2d.drawOval(583, 449, 27, 24); //flore izquierda
+        g2d.drawOval(591, 472, 27, 24); //flore izquierda
+        g2d.drawOval(660, 449, 27, 24); //flore derecha
+        g2d.drawOval(668, 472, 27, 24); //flore derecha        
         
     }
 }
