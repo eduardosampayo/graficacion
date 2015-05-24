@@ -10,9 +10,9 @@ import javax.swing.JPanel;
  *
  * @author Eduardo
  */
-public class PanelEduardo extends JPanel {
+public class Primitivas extends JPanel {
     
-    public PanelEduardo() {
+    public Primitivas() {
 //        setBackground(Color.WHITE); //color del panel
         setLocation(10, 40); //posicion del panel
         setSize(800, 610); //tamaño del panel
@@ -43,6 +43,7 @@ public class PanelEduardo extends JPanel {
 //        g2d.setColor(new Color(180,255,180)); //establece colores rgb
 //        Color bColor = Color.decode("FF0096"); //establece color hexadecimal
 //        g2d.setColor(new Color(0xFABE8F)); // tambien establece color hexadecimal
+        
         /*============================================================
             figuras geometricas rellenas
           ============================================================*/        

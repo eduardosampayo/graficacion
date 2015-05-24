@@ -9,10 +9,10 @@ import javax.swing.JPanel;
  *
  * @author Eduardo
  */
-public class TituloEduardo extends JPanel {
+public class PrimitivasTitulo extends JPanel {
     
-    public TituloEduardo() {
-        setBackground(Color.DARK_GRAY);
+    public PrimitivasTitulo() {
+        setBackground(Color.LIGHT_GRAY);
         setLocation(0, 0); //ubicacion del panel
         setSize(820, 660); //tamaño del panel       
     }
