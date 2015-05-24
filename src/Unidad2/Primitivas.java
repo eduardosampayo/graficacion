@@ -19,26 +19,27 @@ public class Primitivas extends JPanel {
         setLayout(null);
     }
     
+    @Override
     public void paintComponent(Graphics g) {
         super.paintComponent(g);
-        Graphics g2d = (Graphics2D) g;
-                   
+        Graphics2D g2d = (Graphics2D)g;
+                  
         /*============================================================
             cuadricula para poder trabajar sobre las coordenadas
           ============================================================*/
-        //dibujar la cuadricula, cuadro pequeño a cada 19px
-        g2d.setColor(Color.LIGHT_GRAY);
-        for(int j = 0; j<=1210; j+=19){
-            g2d.drawLine(0,j,1210,j); //lineas horizontales
-            g2d.drawLine(j,0,j,610); //lineas verticales            
-        }
-        
-        //dibujar la cuadricula, cuadro grande a cada 76px
-        g2d.setColor(Color.BLUE);     
-        for(int i = 0; i<=1210; i+=76){
-            g2d.drawLine(0,i,1210,i); //lineas horizontales
-            g2d.drawLine(i,0,i,610); //lineas verticales 
-        }
+//        //dibujar la cuadricula, cuadro pequeño a cada 19px
+//        g2d.setColor(Color.LIGHT_GRAY);
+//        for(int j = 0; j<=1210; j+=19){
+//            g2d.drawLine(0,j,1210,j); //lineas horizontales
+//            g2d.drawLine(j,0,j,610); //lineas verticales            
+//        }
+//        
+//        //dibujar la cuadricula, cuadro grande a cada 76px
+//        g2d.setColor(Color.BLUE);     
+//        for(int i = 0; i<=1210; i+=76){
+//            g2d.drawLine(0,i,1210,i); //lineas horizontales
+//            g2d.drawLine(i,0,i,610); //lineas verticales 
+//        }
         
 //        g2d.setColor(new Color(180,255,180)); //establece colores rgb
 //        Color bColor = Color.decode("FF0096"); //establece color hexadecimal
@@ -48,8 +49,118 @@ public class Primitivas extends JPanel {
             figuras geometricas rellenas
           ============================================================*/        
         g2d.setColor(new Color(0xFDFD06));
-        g2d.fillOval(76, 57, 76, 76); //sol      
+        g2d.fillOval(76, 60, 76, 70); //sol 
+        int prx[]={100,114,128};
+        int pry[]={52,22,52};
+               
+        for(int i=0; i<=8; i++) {            
+            g2d.fillPolygon(prx, pry, 3); //rayo de sol
+            g2d.setColor(Color.black); //color del borde
+            g2d.drawPolygon(prx, pry, 3); //borde de rayo
+            g2d.rotate(Math.toRadians(45),114,95); //rotar los rayo
+            g2d.setColor(new Color(0xFDFD06)); //color del rayo
+        }        
+               
+        g2d.rotate(Math.toRadians(-45),114,95); //rotar toda las figuras
+        
+        g2d.setColor(new Color(0x8EC752));
+        int ppnx6[]={24,34,44};
+        int ppny6[]={358,334,358};        
+        g2d.fillPolygon(ppnx6, ppny6, 3); //cesped
+        g2d.setColor(Color.black); //color del borde
+        g2d.drawPolygon(ppnx6, ppny6, 3); //cesped
+        
+        g2d.setColor(new Color(0x09A250));
+        int ppnx7[]={0,10,20};
+        int ppny7[]={346,322,346};        
+        g2d.fillPolygon(ppnx7, ppny7, 3); //cesped
+        g2d.setColor(Color.black); //color del borde
+        g2d.drawPolygon(ppnx7, ppny7, 3); //cesped
+        
+        g2d.setColor(new Color(0x09A250));
+        int ppnx8[]={40,50,60};
+        int ppny8[]={346,322,346};        
+        g2d.fillPolygon(ppnx8, ppny8, 3); //cesped
+        g2d.setColor(Color.black); //color del borde
+        g2d.drawPolygon(ppnx8, ppny8, 3); //cesped
+        
+         g2d.setColor(new Color(0x09A250));
+        int ppnx9[]={70,80,90};
+        int ppny9[]={346,322,346};        
+        g2d.fillPolygon(ppnx9, ppny9, 3); //cesped
+        g2d.setColor(Color.black); //color del borde
+        g2d.drawPolygon(ppnx9, ppny9, 3); //cesped
+        
+        g2d.setColor(new Color(0x09A250));
+        int ppnx10[]={100,110,120};
+        int ppny10[]={346,322,346};        
+        g2d.fillPolygon(ppnx10, ppny10, 3); //cesped
+        g2d.setColor(Color.black); //color del borde
+        g2d.drawPolygon(ppnx10, ppny10, 3); //cesped
+        
+        g2d.setColor(new Color(0x09A250));
+        int ppnx11[]={145,155,165};
+        int ppny11[]={346,322,346};        
+        g2d.fillPolygon(ppnx11, ppny11, 3); //cesped
+        g2d.setColor(Color.black); //color del borde
+        g2d.drawPolygon(ppnx11, ppny11, 3); //cesped
+        
+        g2d.setColor(new Color(0x09A250));
+        int ppnx12[]={185,195,205};
+        int ppny12[]={346,322,346};        
+        g2d.fillPolygon(ppnx12, ppny12, 3); //cesped
+        g2d.setColor(Color.black); //color del borde
+        g2d.drawPolygon(ppnx12, ppny12, 3); //cesped
+        
+        g2d.setColor(new Color(0x09A250));
+        int ppnx13[]={225,235,245};
+        int ppny13[]={346,322,346};        
+        g2d.fillPolygon(ppnx13, ppny13, 3); //cesped
+        g2d.setColor(Color.black); //color del borde
+        g2d.drawPolygon(ppnx13, ppny13, 3); //cesped
+        
+        g2d.setColor(new Color(0x09A250));
+        int ppnx14[]={265,275,285};
+        int ppny14[]={346,322,346};        
+        g2d.fillPolygon(ppnx14, ppny14, 3); //cesped
+        g2d.setColor(Color.black); //color del borde
+        g2d.drawPolygon(ppnx14, ppny14, 3); //cesped
                 
+        g2d.setColor(new Color(0x8EC752));
+        int ppnx[]={284,294,304};
+        int ppny[]={358,334,358};        
+        g2d.fillPolygon(ppnx, ppny, 3); //cesped
+        g2d.setColor(Color.black); //color del borde
+        g2d.drawPolygon(ppnx, ppny, 3); //cesped
+       
+        g2d.setColor(new Color(0x8EC752));
+        int ppnx2[]={244,254,264};
+        int ppny2[]={358,334,358};        
+        g2d.fillPolygon(ppnx2, ppny2, 3); //cesped
+        g2d.setColor(Color.black); //color del borde
+        g2d.drawPolygon(ppnx2, ppny2, 3); //cesped
+        
+        g2d.setColor(new Color(0x8EC752));
+        int ppnx3[]={204,214,224};
+        int ppny3[]={358,334,358};        
+        g2d.fillPolygon(ppnx3, ppny3, 3); //cesped
+        g2d.setColor(Color.black); //color del borde
+        g2d.drawPolygon(ppnx3, ppny3, 3); //cesped
+        
+        g2d.setColor(new Color(0x8EC752));
+        int ppnx4[]={164,174,184};
+        int ppny4[]={358,334,358};        
+        g2d.fillPolygon(ppnx4, ppny4, 3); //cesped
+        g2d.setColor(Color.black); //color del borde
+        g2d.drawPolygon(ppnx4, ppny4, 3); //cesped
+        
+        g2d.setColor(new Color(0x8EC752));
+        int ppnx5[]={124,134,144};
+        int ppny5[]={358,334,358};        
+        g2d.fillPolygon(ppnx5, ppny5, 3); //cesped
+        g2d.setColor(Color.black); //color del borde
+        g2d.drawPolygon(ppnx5, ppny5, 3); //cesped        
+       
         g2d.setColor(new Color(0x964804));
         g2d.fillRect(342, 294, 19, 62); //base de pino izquierdo
         g2d.fillRect(418, 294, 19, 62); //base de pino derecho
@@ -219,7 +330,7 @@ public class Primitivas extends JPanel {
             perimetros de todas las figuras realizadas
           ============================================================*/
         g2d.setColor(Color.black);
-        g2d.drawOval(76, 57, 76, 76); //sol    
+        g2d.drawOval(76, 60, 76, 70); //sol    
         g2d.drawLine(304, 356, 800, 356); //linea base de casa, pinos y cesped
         g2d.drawRect(342, 294, 19, 62); //base pino izquierdo
         g2d.drawRect(418, 294, 19, 62); //base pino derecho

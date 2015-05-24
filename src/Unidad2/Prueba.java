@@ -8,8 +8,8 @@ public class Prueba extends javax.swing.JFrame implements KeyListener
     public Prueba() 
     {
         initComponents();
-//        Cuadricula panel = new Cuadricula();
-//        add(panel);
+////        Cuadricula panel = new Cuadricula();
+////        add(panel);
         Transformaciones trans = new Transformaciones();
         add(trans);
         NumerosPlano panelNumeros = new NumerosPlano(); 
@@ -33,7 +33,7 @@ public class Prueba extends javax.swing.JFrame implements KeyListener
         setTitle("Graficación");
         getContentPane().setLayout(null);
 
-        setBounds(0, 0, 616, 619); //tamaño panel cuadricula
+        setBounds(0, 0, 616, 619); //tamaño panel cuadricula y transformaciones
 //        setBounds(0, 0, 837, 700); //tamaño panel Primitivas
     }// </editor-fold>//GEN-END:initComponents
         public static void main(String args[]) {
