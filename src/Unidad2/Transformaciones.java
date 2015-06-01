@@ -57,20 +57,20 @@ public class Transformaciones extends JPanel {
         /*============================================================
             dibujo y movimiento de manecillas
           ============================================================*/ 
-        for (int m=0; m<60; m++) {
-            g2d.setStroke(new BasicStroke(5)); 
-            g2d.setColor(new Color(0,204,204));
-            g2d.drawLine(250, 250, 250, 120); //minutos
-            g2d.rotate(Math.toRadians(-6),250,250); //rotar
-            
-            for(int s=0; s<60; s++) {
-                g2d.setStroke(new BasicStroke(3));
-                g2d.setColor(new Color(255,102,102));
-                g2d.drawLine(250, 250, 250, 120); //segundos
-                g2d.rotate(Math.toRadians(-6),250,250); //rotar
-                
-            }
-        }
+//        for (int m=0; m<60; m++) {
+//            g2d.setStroke(new BasicStroke(5)); 
+//            g2d.setColor(new Color(0,204,204));
+//            g2d.drawLine(250, 250, 250, 120); //minutos
+//            g2d.rotate(Math.toRadians(-6),250,250); //rotar
+//            
+//            for(int s=0; s<60; s++) {
+//                g2d.setStroke(new BasicStroke(3));
+//                g2d.setColor(new Color(255,102,102));
+//                g2d.drawLine(250, 250, 250, 120); //segundos
+//                g2d.rotate(Math.toRadians(-6),250,250); //rotar
+//                
+//            }
+//        }
         
        
         
