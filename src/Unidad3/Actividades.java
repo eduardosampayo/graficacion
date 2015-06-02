@@ -13,11 +13,14 @@ public class Actividades extends javax.swing.JFrame implements KeyListener {
     public Actividades(){
         initComponents();
         
-        ActividadesJPanel actjpanel = new ActividadesJPanel();
-        add(actjpanel);
+        Act_RellenosJPanel actRellenos = new Act_RellenosJPanel();
+        add(actRellenos);
+        
+        Act_GraficaJPanel actGrafica = new Act_GraficaJPanel();
+        add(actGrafica);
         
         setLocationRelativeTo(null);
-        actjpanel.requestFocus();
+//        actRellenos.requestFocus();
     }
     
     @SuppressWarnings("unchecked")

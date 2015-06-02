@@ -54,10 +54,8 @@ public class FigurasJpanel extends JPanel {
         gg.fillRect( 4,  4,  3,  3 );  // dibuja un rectángulo relleno
 
         // pinta a imagenBuf en el objeto JFrame
-        g2d.setPaint( new TexturePaint( imagenBuf,
-        new Rectangle( 10, 10 ) ) );
-        g2d.fill(
-        new RoundRectangle2D.Double( 155,  30,  75,  100,  50,  50 ) );
+        g2d.setPaint( new TexturePaint( imagenBuf, new Rectangle( 10, 10 ) ) );
+        g2d.fill(new RoundRectangle2D.Double( 155,  30,  75,  100,  50,  50 ) );
 
         // dibuja arco en forma de pastel en 2D, de color blanco
         g2d.setPaint( Color.WHITE );
