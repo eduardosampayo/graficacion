@@ -35,8 +35,7 @@ public class Act_RellenosJPanel extends JPanel {
         Font fuente = new Font("Seoge UI", Font.ITALIC, 17);
         g2d.setFont(fuente);
         g2d.setColor(new Color(0x330019));
-        g2d.drawString("Rellenos degradados", 300, 15);
-        g2d.drawString("Rellenos con patron", 870, 15);
+        g2d.drawString("Rellenos degradados", 300, 15);        
         
         // dibuja un rectangulo en 2D, relleno con un gradiente color verde-rojo
         g2d.setPaint( new GradientPaint( 30, 180, Color.green, 180, 30,
@@ -62,6 +61,9 @@ public class Act_RellenosJPanel extends JPanel {
         /*============================================================
             actividad patron de textura
           ============================================================*/
+        g2d.setColor(new Color(0x330019));
+        g2d.drawString("Rellenos con patron", 870, 15);
+        
         BufferedImage imgbufer = new BufferedImage(50, 50, BufferedImage.TYPE_INT_RGB);
         Graphics2D ip = imgbufer.createGraphics();
         
