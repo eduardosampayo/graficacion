@@ -6,7 +6,10 @@ import java.awt.Color;
 import java.awt.Font;
 import java.awt.GradientPaint;
 import java.awt.Graphics2D;
+import java.awt.Rectangle;
+import java.awt.TexturePaint;
 import java.awt.geom.Rectangle2D;
+import java.awt.image.BufferedImage;
 import javax.swing.JOptionPane;
 
 /**
@@ -19,7 +22,7 @@ public class Act_GraficaJFrame extends javax.swing.JFrame {
      * Creates new form Act_GraficaJFrame
      */
     public Act_GraficaJFrame() {
-        initComponents();
+        initComponents();     
     }
 
     /**
@@ -274,46 +277,44 @@ public class Act_GraficaJFrame extends javax.swing.JFrame {
         
         Graphics2D g2d = (Graphics2D)jp_grafica.getGraphics();
         
+        BufferedImage imgbufer = new BufferedImage(10, 10, BufferedImage.TYPE_INT_RGB);
+        Graphics2D ip = imgbufer.createGraphics();        
+        ip.setColor(new Color(0x5F9EA0)); //color de fondo
+        ip.fillRect(0, 0, 10, 10); //rectangulo relleno a cada 50x50
+        ip.setColor(Color.black);
+        ip.drawRect(2, 2, 7, 7); //rectangulo dentro del relleno
+        g2d.setPaint(new TexturePaint(imgbufer, new Rectangle(10, 10)));
+        
         switch (juan) {
-            case 10:                    
-                g2d.setPaint(new GradientPaint (220, 278, Color.yellow, 145, 298, Color.orange, true));
-                g2d.fill( new Rectangle2D.Double(195, 278, 50 , 20 ) ); //barra de pepe
+            case 10:  
+                g2d.fillRect(195, 278, 50 , 20);
             break; 
             case 20:
-                g2d.setPaint(new GradientPaint (220, 258, Color.yellow, 145, 298, Color.orange, true));
-                g2d.fill( new Rectangle2D.Double(195, 258, 50 , 40 ) ); //barra de pepe
+                g2d.fillRect(195, 258, 50 , 40);
             break;
             case 30:
-                g2d.setPaint(new GradientPaint (220, 238, Color.yellow, 145, 298, Color.orange, true));
-                g2d.fill( new Rectangle2D.Double(195, 238, 50 , 60 ) ); //barra de pepe
+                g2d.fillRect(195, 238, 50 , 60);
             break;
             case 40:
-                g2d.setPaint(new GradientPaint (220, 218, Color.yellow, 145, 298, Color.orange, true));
-                g2d.fill( new Rectangle2D.Double(195, 218, 50 , 80 ) ); //barra de pepe
+                g2d.fillRect(195, 218, 50 , 80);
             break;
             case 50:
-                g2d.setPaint(new GradientPaint (220, 198, Color.yellow, 145, 298, Color.orange, true));
-                g2d.fill( new Rectangle2D.Double(195, 198, 50 , 100 ) ); //barra de pepe
+                g2d.fillRect(195, 198, 50 , 100);
             break;
             case 60:
-                g2d.setPaint(new GradientPaint (220, 178, Color.yellow, 145, 298, Color.orange, true));
-                g2d.fill( new Rectangle2D.Double(195, 178, 50 , 120 ) ); //barra de pepe
+                g2d.fillRect(195, 178, 50 , 120);
             break;
             case 70:
-                g2d.setPaint(new GradientPaint (220, 158, Color.yellow, 145, 298, Color.orange, true));
-                g2d.fill( new Rectangle2D.Double(195, 158, 50 , 140 ) ); //barra de pepe
+                g2d.fillRect(195, 158, 50 , 140);
             break;
             case 80:
-                g2d.setPaint(new GradientPaint (220, 138, Color.yellow, 145, 298, Color.orange, true));
-                g2d.fill( new Rectangle2D.Double(195, 138, 50 , 160 ) ); //barra de pepe
+                g2d.fillRect(195, 138, 50 , 160);
             break;
             case 90:
-                g2d.setPaint(new GradientPaint (220, 118, Color.yellow, 145, 298, Color.orange, true));
-                g2d.fill( new Rectangle2D.Double(195, 118, 50 , 180 ) ); //barra de pepe
+                g2d.fillRect(195, 118, 50 , 180);
             break;
             case 100:
-                g2d.setPaint(new GradientPaint (220, 98, Color.yellow, 145, 298, Color.orange, true));
-                g2d.fill( new Rectangle2D.Double(195, 98, 50 , 200 ) ); //barra de pepe
+                g2d.fillRect(195, 98, 50 , 200);
             break;
             default:
                 JOptionPane.showMessageDialog(this, "error en la enreada de datos");
@@ -330,43 +331,43 @@ public class Act_GraficaJFrame extends javax.swing.JFrame {
         
         switch (pedro) {
             case 10:                    
-                g2d.setPaint(new GradientPaint (295, 278, Color.yellow, 145, 298, Color.orange, true));
+                g2d.setPaint(new GradientPaint (295, 278, Color.green, 295, 298, Color.orange, true));
                 g2d.fill( new Rectangle2D.Double(270, 278, 50 , 20 ) ); //barra de pepe
             break; 
             case 20:
-                g2d.setPaint(new GradientPaint (295, 258, Color.yellow, 145, 298, Color.orange, true));
+                g2d.setPaint(new GradientPaint (295, 258, Color.green, 295, 298, Color.orange, true));
                 g2d.fill( new Rectangle2D.Double(270, 258, 50 , 40 ) ); //barra de pepe
             break;
             case 30:
-                g2d.setPaint(new GradientPaint (295, 238, Color.yellow, 145, 298, Color.orange, true));
+                g2d.setPaint(new GradientPaint (295, 238, Color.green, 295, 298, Color.orange, true));
                 g2d.fill( new Rectangle2D.Double(270, 238, 50 , 60 ) ); //barra de pepe
             break;
             case 40:
-                g2d.setPaint(new GradientPaint (295, 218, Color.yellow, 145, 298, Color.orange, true));
+                g2d.setPaint(new GradientPaint (295, 218, Color.green, 295, 298, Color.orange, true));
                 g2d.fill( new Rectangle2D.Double(270, 218, 50 , 80 ) ); //barra de pepe
             break;
             case 50:
-                g2d.setPaint(new GradientPaint (295, 198, Color.yellow, 145, 298, Color.orange, true));
+                g2d.setPaint(new GradientPaint (295, 198, Color.green, 295, 298, Color.orange, true));
                 g2d.fill( new Rectangle2D.Double(270, 198, 50 , 100 ) ); //barra de pepe
             break;
             case 60:
-                g2d.setPaint(new GradientPaint (295, 178, Color.yellow, 145, 298, Color.orange, true));
+                g2d.setPaint(new GradientPaint (295, 178, Color.green, 295, 298, Color.orange, true));
                 g2d.fill( new Rectangle2D.Double(270, 178, 50 , 120 ) ); //barra de pepe
             break;
             case 70:
-                g2d.setPaint(new GradientPaint (295, 158, Color.yellow, 145, 298, Color.orange, true));
+                g2d.setPaint(new GradientPaint (295, 158, Color.green, 295, 298, Color.orange, true));
                 g2d.fill( new Rectangle2D.Double(270, 158, 50 , 140 ) ); //barra de pepe
             break;
             case 80:
-                g2d.setPaint(new GradientPaint (295, 138, Color.yellow, 145, 298, Color.orange, true));
+                g2d.setPaint(new GradientPaint (295, 138, Color.green, 295, 298, Color.orange, true));
                 g2d.fill( new Rectangle2D.Double(270, 138, 50 , 160 ) ); //barra de pepe
             break;
             case 90:
-                g2d.setPaint(new GradientPaint (295, 118, Color.yellow, 145, 298, Color.orange, true));
+                g2d.setPaint(new GradientPaint (295, 118, Color.green, 295, 298, Color.orange, true));
                 g2d.fill( new Rectangle2D.Double(270, 118, 50 , 180 ) ); //barra de pepe
             break;
             case 100:
-                g2d.setPaint(new GradientPaint (295, 98, Color.yellow, 145, 298, Color.orange, true));
+                g2d.setPaint(new GradientPaint (295, 98, Color.green, 295, 298, Color.orange, true));
                 g2d.fill( new Rectangle2D.Double(270, 98, 50 , 200 ) ); //barra de pepe
             break;
             default:
@@ -382,46 +383,46 @@ public class Act_GraficaJFrame extends javax.swing.JFrame {
         
         Graphics2D g2d = (Graphics2D)jp_grafica.getGraphics();
         
+        BufferedImage imgbufer = new BufferedImage(20, 20, BufferedImage.TYPE_INT_RGB);
+        Graphics2D ip = imgbufer.createGraphics();        
+        ip.setColor(new Color(0x5F9EA0)); //color de fondo
+        ip.fillRect(0, 0, 20, 20); //rectangulo relleno a cada 50x50
+        ip.setColor(Color.black);
+        ip.drawOval(2, 2, 16, 16); //circulo dentro del relleno
+        ip.drawOval(4, 4, 12, 12); //circulo dentro del relleno
+        ip.drawOval(6, 6, 8, 8); //circulo dentro del relleno
+        g2d.setPaint(new TexturePaint(imgbufer, new Rectangle(20, 20)));
+        
         switch (pablo) {
-            case 10:                    
-                g2d.setPaint(new GradientPaint (370, 278, Color.yellow, 145, 298, Color.orange, true));
-                g2d.fill( new Rectangle2D.Double(345, 278, 50 , 20 ) ); //barra de pepe
+            case 10:
+                g2d.fillRect(345, 278, 50 , 20);
             break; 
             case 20:
-                g2d.setPaint(new GradientPaint (370, 258, Color.yellow, 145, 298, Color.orange, true));
-                g2d.fill( new Rectangle2D.Double(345, 258, 50 , 40 ) ); //barra de pepe
+                g2d.fillRect(345, 258, 50 , 40);
             break;
             case 30:
-                g2d.setPaint(new GradientPaint (370, 238, Color.yellow, 145, 298, Color.orange, true));
-                g2d.fill( new Rectangle2D.Double(345, 238, 50 , 60 ) ); //barra de pepe
+                g2d.fillRect(345, 238, 50 , 60);
             break;
             case 40:
-                g2d.setPaint(new GradientPaint (370, 218, Color.yellow, 145, 298, Color.orange, true));
-                g2d.fill( new Rectangle2D.Double(345, 218, 50 , 80 ) ); //barra de pepe
+                g2d.fillRect(345, 218, 50 , 80);
             break;
             case 50:
-                g2d.setPaint(new GradientPaint (370, 198, Color.yellow, 145, 298, Color.orange, true));
-                g2d.fill( new Rectangle2D.Double(345, 198, 50 , 100 ) ); //barra de pepe
+                g2d.fillRect(345, 198, 50 , 100);
             break;
             case 60:
-                g2d.setPaint(new GradientPaint (370, 178, Color.yellow, 145, 298, Color.orange, true));
-                g2d.fill( new Rectangle2D.Double(345, 178, 50 , 120 ) ); //barra de pepe
+                g2d.fillRect(345, 178, 50 , 120);
             break;
             case 70:
-                g2d.setPaint(new GradientPaint (370, 158, Color.yellow, 145, 298, Color.orange, true));
-                g2d.fill( new Rectangle2D.Double(345, 158, 50 , 140 ) ); //barra de pepe
+                g2d.fillRect(345, 158, 50 , 140);
             break;
             case 80:
-                g2d.setPaint(new GradientPaint (370, 138, Color.yellow, 145, 298, Color.orange, true));
-                g2d.fill( new Rectangle2D.Double(345, 138, 50 , 160 ) ); //barra de pepe
+                g2d.fillRect(345, 138, 50 , 160);
             break;
             case 90:
-                g2d.setPaint(new GradientPaint (370, 118, Color.yellow, 145, 298, Color.orange, true));
-                g2d.fill( new Rectangle2D.Double(345, 118, 50 , 180 ) ); //barra de pepe
+                g2d.fillRect(345, 118, 50 , 180);
             break;
             case 100:
-                g2d.setPaint(new GradientPaint (370, 98, Color.yellow, 145, 298, Color.orange, true));
-                g2d.fill( new Rectangle2D.Double(345, 98, 50 , 200 ) ); //barra de pepe
+                g2d.fillRect(345, 98, 50 , 200);
             break;
             default:
                 JOptionPane.showMessageDialog(this, "error en la enreada de datos");
