@@ -16,9 +16,6 @@ public class Actividades extends javax.swing.JFrame implements KeyListener {
         Act_RellenosJPanel actRellenos = new Act_RellenosJPanel();
         add(actRellenos);
         
-        Act_GraficaJPanel actGrafica = new Act_GraficaJPanel();
-        add(actGrafica);
-        
         setLocationRelativeTo(null);
 //        actRellenos.requestFocus();
     }
@@ -28,7 +25,7 @@ public class Actividades extends javax.swing.JFrame implements KeyListener {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Actividades");
         getContentPane().setLayout(null);
-        setBounds(0, 0, 1200, 660);      
+        setBounds(0, 0, 1200, 255);      
     }
 
     public static void main(String[] args) {
