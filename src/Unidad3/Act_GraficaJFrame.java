@@ -265,7 +265,7 @@ public class Act_GraficaJFrame extends javax.swing.JFrame {
                 g2d.fill( new Rectangle2D.Double( 120, 98, 50 , 199 ) ); //barra de pepe
             break;
             default:
-                JOptionPane.showMessageDialog(this, "error en la enreada de datos");
+                JOptionPane.showMessageDialog(this, "error, solo acepta multiplos de 10 apartir de 10");
                 limpiar();
             break;
         }        
@@ -317,7 +317,7 @@ public class Act_GraficaJFrame extends javax.swing.JFrame {
                 g2d.fillRect(195, 98, 50 , 199);
             break;
             default:
-                JOptionPane.showMessageDialog(this, "error en la enreada de datos");
+                JOptionPane.showMessageDialog(this, "error, solo acepta multiplos de 10 apartir de 10");
                 limpiar();
             break;
         } 
@@ -371,7 +371,7 @@ public class Act_GraficaJFrame extends javax.swing.JFrame {
                 g2d.fill( new Rectangle2D.Double(270, 98, 50 , 199 ) ); //barra de pepe
             break;
             default:
-                JOptionPane.showMessageDialog(this, "error en la enreada de datos");
+                JOptionPane.showMessageDialog(this, "error, solo acepta multiplos de 10 apartir de 10");
                 limpiar();
             break;
         } 
@@ -425,7 +425,7 @@ public class Act_GraficaJFrame extends javax.swing.JFrame {
                 g2d.fillRect(345, 98, 50 , 199);
             break;
             default:
-                JOptionPane.showMessageDialog(this, "error en la enreada de datos");
+                JOptionPane.showMessageDialog(this, "error, solo acepta multiplos de 10 apartir de 10");
                 limpiar();
             break;
         } 
