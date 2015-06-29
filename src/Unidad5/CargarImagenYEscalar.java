@@ -18,8 +18,10 @@ public class CargarImagenYEscalar extends JApplet {
     // carga la imagen cuando se carga el applet
     @Override
     public void init() {
-    imagen1 = getImage( getDocumentBase(), "perfil.jpg" );
-    imagen2 = new ImageIcon( "perfil.jpg" );
+//    imagen1 = getImage( getDocumentBase(), "../img/perfil.jpg" );
+    imagen1 = getImage ( getClass().getResource("../img/deitel0.gif" ) );
+//    imagen2 = new ImageIcon( "perfil.jpg" );
+    imagen2 = new ImageIcon ( getClass().getResource("../img/deitel6.gif" ) );
     } // fin del método init
 
     // muestra la imagen
