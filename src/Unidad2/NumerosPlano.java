@@ -10,6 +10,7 @@ public class NumerosPlano extends JPanel {
         setLocation(0,0);
         setSize(600, 600);        
     } //AQUI TODO LO NECESARIO PARA GRAFICAR
+    
     public void paintComponent(Graphics g) {
         super.paintComponent(g);
         
