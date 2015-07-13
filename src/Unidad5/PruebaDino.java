@@ -22,7 +22,9 @@ public class PruebaDino extends javax.swing.JFrame implements ActionListener {
         p = new Paisaje();
         this.add(p);
         temporizador = new Timer(100, this);
-        temporizador.start();
+        temporizador.start(); 
+        
+        
     }
 
     /**
@@ -92,8 +94,7 @@ public class PruebaDino extends javax.swing.JFrame implements ActionListener {
     @Override
     public void actionPerformed(ActionEvent ae) {
         //reposicionar el panel
-//        System
         p.setLocation(p.getX()-10,p.getY());
-        repaint();
+        repaint();     
     }
 }

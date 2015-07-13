@@ -12,7 +12,7 @@ public class AnimadorLogo {
     // ejecuta la animación en un objeto JFrame   
     public static void main(String[] args) {
         
-        AnimadorLogoJPanel animacion = new AnimadorLogoJPanel();
+        CaballoCorreJPanel animacion = new CaballoCorreJPanel();
 
         JFrame ventana = new JFrame( "Prueba de Animador" ); // establece la ventana
         ventana.setDefaultCloseOperation( JFrame.EXIT_ON_CLOSE );

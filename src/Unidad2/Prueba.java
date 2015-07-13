@@ -9,20 +9,20 @@ public class Prueba extends javax.swing.JFrame implements KeyListener {
         initComponents();
 //        Cuadricula panel = new Cuadricula();
 //        add(panel);
-        Transformaciones trans = new Transformaciones();
-        add(trans);
+//        Transformaciones trans = new Transformaciones();
+//        add(trans);
 //        NumerosPlano panelNumeros = new NumerosPlano(); 
 //        add(panelNumeros);
-//        Primitivas primitivas = new Primitivas();
-//        add(primitivas);
-//        PrimitivasTitulo primitivastitulo = new PrimitivasTitulo();
-//        add(primitivastitulo);
+        Primitivas primitivas = new Primitivas();
+        add(primitivas);
+        PrimitivasTitulo primitivastitulo = new PrimitivasTitulo();
+        add(primitivastitulo);
                         
         setLocationRelativeTo(null); 
         //addKeyListener(this);
 //        panel.requestFocus(); //panel cuadricula
-        trans.requestFocus(); //panel tranformaciones
-//        primitivas.requestFocus(); //panel Primtivas
+//        trans.requestFocus(); //panel tranformaciones
+        primitivas.requestFocus(); //panel Primtivas
     }    
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
