@@ -16,7 +16,7 @@ public class Obstaculo extends JPanel {
     {
         super();
         this.setOpaque(false);
-        setSize(100, 202);
+        setSize(115, 150);
         setLocation(500, 500);
         fondo=new ImageIcon(getClass().getResource("../img/obstaculo.png"));
     }

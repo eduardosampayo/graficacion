@@ -70,13 +70,13 @@ public class PruebaCaballo extends JFrame implements ActionListener {
                 }
             }               
        }
-//        if (evt.getKeyCode()==KeyEvent.VK_DOWN) {
-//           if (caballoSalta.getY()==300) {
-//               for (int i = 20; i <= 80; i+=20) {
-//                    caballoSalta.setLocation(caballoSalta.getX(), caballoSalta.getY()+i);   
-//                }
-//            }
-//        }
+        if (evt.getKeyCode()==KeyEvent.VK_DOWN) {
+           if (caballoSalta.getY()==300) {
+               for (int i = 20; i <= 80; i+=20) {
+                    caballoSalta.setLocation(caballoSalta.getX(), caballoSalta.getY()+i);   
+                }
+            }
+        }
         
         if (evt.getKeyCode()==KeyEvent.VK_SPACE) {
             this.setVisible(false);
